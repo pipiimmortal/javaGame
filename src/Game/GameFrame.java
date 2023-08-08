@@ -2,7 +2,6 @@ package Game;
 
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -10,8 +9,6 @@ import java.io.FileInputStream;
 
 
 public class GameFrame extends JFrame{
-
-
     //关卡设置
     public int level = 1;
     //窗口尺寸
@@ -93,15 +90,6 @@ public class GameFrame extends JFrame{
 
         // 启动计时器
         timer.start();
-      /*  while (true){
-            repaint();
-            try {
-                Thread.sleep(25);
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }*/
-
     }
 
     @Override  // 使用 @Override 注解
@@ -109,7 +97,7 @@ public class GameFrame extends JFrame{
         //查找坐标
         //System.out.println(player.getX()+ "  "+player.getY());
         //碰撞检测验证
-       /*      S =  new Rectangle(100, 100, 100, 100);
+        /*   S =  new Rectangle(100, 100, 100, 100);
             g.setColor(Color.GREEN);
             g.drawRect(100,100,100,100);
             System.out.println(player.p);

@@ -1,12 +1,9 @@
 package Game;
 
-
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import javax.print.attribute.standard.MediaSize;
 import javax.swing.Timer;
 
 public class GamePlayer extends GameObject{
@@ -400,7 +397,6 @@ public class GamePlayer extends GameObject{
             ff();
             W = true;
             barrier(1);
-            //setY(getY() - getSpeed());
             setImg(imagesUp[moveCountU]);
             moveCountU++;
             if ((moveCountU == 9)){
@@ -411,7 +407,6 @@ public class GamePlayer extends GameObject{
             ff();
             S = true;
             barrier(2);
-            //setY(getY() + getSpeed());
             if (!isAttack()){
                 setImg(imagesDown[moveCount]);
                 moveCount++;
@@ -431,7 +426,6 @@ public class GamePlayer extends GameObject{
             ff();
             A = true;
             barrier(3);
-            //setX(getX() - getSpeed());
             setImg(ImagesLeft[moveCountL]);
             moveCountL++;
             if (moveCountL == 6){
@@ -442,7 +436,6 @@ public class GamePlayer extends GameObject{
             ff();
             D = true;
             barrier(4);
-            //setX(getX() + getSpeed());
             setImg(images[moveCount]);
             moveCount++;
             if (moveCount == 8){
@@ -454,8 +447,6 @@ public class GamePlayer extends GameObject{
             W = true;
             A = true;
             barrier(5);
-            //setY(getY() - getSpeed());
-            //setX(getX() - getSpeed());
             setImg(imagesLU[moveCountU]);
             moveCountU++;
             if ((moveCountU == 9)){
@@ -467,8 +458,6 @@ public class GamePlayer extends GameObject{
             W = true;
             D = true;
             barrier(6);
-            //setY(getY() - getSpeed());
-            //setX(getX() + getSpeed());
             setImg(imagesRU[moveCountU]);
             moveCountU++;
             if ((moveCountU == 9)){
@@ -480,8 +469,6 @@ public class GamePlayer extends GameObject{
             S = true;
             A = true;
             barrier(7);
-            //setY(getY() + getSpeed());
-            //setX(getX() - getSpeed());
             setImg(imagesLD[moveCountU]);
             moveCountU++;
             if ((moveCountU == 9)){
@@ -492,8 +479,6 @@ public class GamePlayer extends GameObject{
             S = true;
             D = true;
             barrier(8);
-            //setY(getY() + getSpeed());
-            //setX(getX() + getSpeed());
             setImg(imagesRD[moveCount]);
             moveCount++;
             if (moveCount == 8){
@@ -585,11 +570,6 @@ public class GamePlayer extends GameObject{
         else
             xianzhi = false;
         setFlash1();
-
         setFlash2();
-
-
-
-
     }
 }
