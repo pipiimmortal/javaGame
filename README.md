@@ -13,6 +13,14 @@ WASD + N（坐下） + P（站立） + O（观音坐莲） + J（攻击） + F�
 待完善，持续添加中
 ###  风格
 古代仙侠剧情闯关类
-
 ###  效果展示
+
+![babc2199-0581-4062-bc7a-09bac1603212](https://github.com/pipiimmortal/newmygame/assets/135148633/51660a5e-ae06-424d-be21-84e9217e4958)
+
+![c9dfe787-add1-4f0d-aff5-4d47d1cbf921](https://github.com/pipiimmortal/newmygame/assets/135148633/efa16f8b-7f35-48e2-8968-871997f41aa6)
+
+
+
+
+
 
