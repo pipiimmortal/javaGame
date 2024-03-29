@@ -1,0 +1,1259 @@
+
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+    <meta charset="utf-8">
+    <title>行者笔录|资源导航~</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="keywords" content="开源导航,开源书签,简洁导航,云链接,个人导航,个人书签"/>
+    <meta name="description" content="个人使用的免费资源收集导航，免费影视、免费音乐以及各种资源搜集。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./static/MDUI/v1.0.1/css/mdui.min.css'>
+    <link rel='stylesheet' href='./static/ContextMenu/2.9.2/jquery.contextMenu.min.css'>
+    <link rel="stylesheet" href="./static/Font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./static/Layui/v2.6.8/css/layui-icon.css">
+    <link rel="stylesheet" href="./templates/default/style0.css?v=v0.9.19-20220429">
+    <style>
+        /*配色*/
+        .mdui-theme-primary-indigo .mdui-color-theme {background-color: rgb(39, 128, 168) !important;}
+        .mdui-loaded .mdui-drawer { }
+        .HFC{color: #ffffff!important;}
+        .CBC{background-color: rgba(255,255,255,0.2)!important;}
+        .OBC{background-color: transparent!important;}
+        .CFC{color: #212121!important;}
+        .TFC{color: #212121!important;}
+        .DFC{color: #9e9e9e!important;}
+        /*描述行数*/
+        .link-line {height:120px;}
+        .link-content {
+            height:48px;
+            -webkit-line-clamp: 2;
+        }
+        .mdui-card-primary {padding-top: 16px;}
+
+    </style>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6605580376880594"
+            crossorigin="anonymous"></script>
+
+</head>
+<body class = "mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-loaded OBC " >
+<!--导航工具-->
+<header class = "mdui-appbar mdui-appbar-fixed" >
+    <div class="mdui-toolbar mdui-color-theme" >
+        <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white HFC" mdui-drawer="{target: '#drawer', swipe: true}"><i class="mdui-icon material-icons">📖</i></span>
+        <a href="http://www.xzblu.cn" target="_blank" class = "mdui-typo-headline HFC" ><span class="mdui-typo-title">行者笔录</span></a>
+        <div class="mdui-toolbar-spacer" ></div>
+
+        <!-- 新版搜索框 -->
+        <div class="mdui-col-md-2 mdui-col-xs-5">
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <input class="mdui-textfield-input search HFC"  placeholder="输入关键词进行搜索" type="text" />
+            </div>
+        </div>
+
+        <a class = "mdui-hidden-xs mdui-btn mdui-btn-icon" id="config"  title = "主题设置" style="display:none;"><i   class="mdui-icon material-icons HFC">&#xe40a;</i></a>
+        <!-- 新版搜索框END -->
+    </div>
+</header>
+<!--导航工具END-->
+<!-- 返回顶部按钮 -->
+<div class="top mdui-shadow-10"><a href="javascript:;" title="返回顶部" onclick="gotop()"><i class="mdui-icon material-icons">◮</i></a></div>
+<!--左侧抽屉导航-->
+<div class="mdui-drawer" id="drawer" >
+    <ul class="mdui-list" >
+
+
+        <!-- 左侧登陆或后台End -->
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-33">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-codiepie"></i>学术相关</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-31">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-paper-plane"></i>GPT大模型</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-32">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-film"></i>影视频道</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-34">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-toggle-right"></i>音乐下载</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-35">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-sticky-note-o"></i>PPT模板</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+        <div class="mdui-collapse" mdui-collapse>
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header CFC">
+                    <a href="#category-36">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content category-name CFC">
+                                <i class="fa fa-arrow-circle-down"></i>B站视频下载</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">^</i>
+                        </li>
+                    </a>
+                </div>
+                <!-- 遍历二级分类-->
+                <div class="mdui-collapse-item-body">
+                    <ul>
+                    </ul>
+                </div>
+                <!--遍历二级分类END-->
+            </div>
+        </div>
+
+    </ul>
+</div>
+<!--左侧抽屉导航END-->
+<!--正文内容部分-->
+<div class="mdui-container">
+    <div style="position:fixed;z-index:1000;right:0px;width:160px;padding-right:0px;"><div id="he-plugin-simple"></div></div>
+    <div class="mdui-row">
+        <!-- 遍历分类目录 -->
+        <div id = "category-33" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-codiepie"></i>&nbsp;学术相关				<span class = "mdui-typo-caption DFC">一些科研必备的工具</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_39" link-title = "谷歌学术镜像导航" link-url = "http://scholar.scqylaw.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://scholar.scqylaw.com/" target="_blank" title = "主要提供谷歌学术搜索Google Scholar镜像和谷歌网页搜索镜像的导航站,实时更新最新镜像网站">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cDovL3NjaG9sYXIuc2NxeWxhdy5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">谷歌学术镜像导航</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">主要提供谷歌学术搜索Google Scholar镜像和谷歌网页搜索镜像的导航站,实时更新最新镜像网站</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_24" link-title = "专利之星" link-url = "https://cprs.patentstar.com.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://cprs.patentstar.com.cn/" target="_blank" title = "专利之星检索系统，致力于让网民更便捷的获取专利信息。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jcHJzLnBhdGVudHN0YXIuY29tLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">专利之星</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">专利之星检索系统，致力于让网民更便捷的获取专利信息。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_25" link-title = "谷歌翻译" link-url = "https://fanyi.ning0818.top/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://fanyi.ning0818.top/" target="_blank" title = "谷歌翻译镜像版">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9mYW55aS5uaW5nMDgxOC50b3A=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">谷歌翻译</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">谷歌翻译镜像版</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_30" link-title = "谷歌学术镜像(1)" link-url = "https://sc.panda985.com/index.html">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://sc.panda985.com/index.html" target="_blank" title = "学术搜索:熊猫学术旗下的学术检索网站，你可以通过学术搜索探索相关作品、引文、作者和出版物，追踪任何研究领域的最新发展">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9zYy5wYW5kYTk4NS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">谷歌学术镜像(1)</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">学术搜索:熊猫学术旗下的学术检索网站，你可以通过学术搜索探索相关作品、引文、作者和出版物，追踪任何研究领域的最新发展</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_31" link-title = "谷歌学术镜像(2)" link-url = "https://xueshu.lanfanshu.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://xueshu.lanfanshu.cn/" target="_blank" title = "谷歌学术镜像版">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly94dWVzaHUubGFuZmFuc2h1LmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">谷歌学术镜像(2)</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">谷歌学术镜像版</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_32" link-title = "谷歌学术镜像(3)" link-url = "https://so1.cljtscd.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://so1.cljtscd.com/" target="_blank" title = "站在巨人的肩膀上">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9zbzEuY2xqdHNjZC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">谷歌学术镜像(3)</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">站在巨人的肩膀上</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+
+
+
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_41" link-title = "PubScholar公益学术平台" link-url = "https://pubscholar.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://pubscholar.cn/" target="_blank" title = "PubScholar公益学术平台是中国科学院作为国家战略科技力量的主力军，履行学术资源保障“国家队”职责">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9wdWJzY2hvbGFyLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">PubScholar公益学术平台</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">PubScholar公益学术平台是中国科学院作为国家战略科技力量的主力军，履行学术资源保障“国家队”职责</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+        <div id = "category-31" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-paper-plane"></i>&nbsp;GPT大模型				<span class = "mdui-typo-caption DFC">国内外GPT大模型归类</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_62" link-title = "在问" link-url = "https://www.zaiwen.top/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.zaiwen.top/" target="_blank" title = "在问社区是一个以科技普及为使命的免费开源社区，我们致力于为广大用户提供世界知识和专业服务。在问社区集成了众多优秀的大语言模型，用户可以轻松地获取和使用这些模型来实现自然语言处理、智能问答、文本创作等多种功能。此外，我们还支持AI作画、文档分析、在线检索和思维导图等功能，帮助用户更高效地获取和处理信息。在问社区始终秉持开放、共享的精神，欢迎广大用户加入我们，共同探索科技的魅力。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuemFpd2VuLnRvcA==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">在问</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">在问社区是一个以科技普及为使命的免费开源社区，我们致力于为广大用户提供世界知识和专业服务。在问社区集成了众多优秀的大语言模型，用户可以轻松地获取和使用这些模型来实现自然语言处理、智能问答、文本创作等多种功能。此外，我们还支持AI作画、文档分析、在线检索和思维导图等功能，帮助用户更高效地获取和处理信息。在问社区始终秉持开放、共享的精神，欢迎广大用户加入我们，共同探索科技的魅力。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_63" link-title = "pcyr" link-url = "https://pcyr.ai1233.top/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://pcyr.ai1233.top/" target="_blank" title = "免费且直接使用的GPT镜像站">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9wY3lyLmFpMTIzMy50b3A=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">pcyr</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">免费且直接使用的GPT镜像站</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_1" link-title = "智谱清言" link-url = "https://chatglm.cn/main/detail">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chatglm.cn/main/detail" target="_blank" title = "中国版对话语言模型，与GLM大模型进行对话。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0Z2xtLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">智谱清言</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">中国版对话语言模型，与GLM大模型进行对话。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_2" link-title = "讯飞星火认知大模型-AI大语言模型-星火大模型-科大讯飞" link-url = "https://xinghuo.xfyun.cn/desk">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://xinghuo.xfyun.cn/desk" target="_blank" title = "讯飞星火认知大模型，是由科大讯飞推出的新一代认知智能大模型，拥有跨领域的知识和语言理解能力，能够基于自然对话方式理解与执行任务，提供语言理解、知识问答、逻辑推理、数学题解答、代码理解与编写等多种能力。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly94aW5naHVvLnhmeXVuLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">讯飞星火认知大模型-AI大语言模型-星火大模型-科大讯飞</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">讯飞星火认知大模型，是由科大讯飞推出的新一代认知智能大模型，拥有跨领域的知识和语言理解能力，能够基于自然对话方式理解与执行任务，提供语言理解、知识问答、逻辑推理、数学题解答、代码理解与编写等多种能力。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_3" link-title = "通义千问" link-url = "https://qianwen.aliyun.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://qianwen.aliyun.com/" target="_blank" title = "我是通义千问，一个专门响应人类指令的大模型，希望能对你有所帮助">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9xaWFud2VuLmFsaXl1bi5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">通义千问</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">我是通义千问，一个专门响应人类指令的大模型，希望能对你有所帮助</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_4" link-title = "天工AI搜索" link-url = "https://search.tiangong.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://search.tiangong.cn/" target="_blank" title = "搭载天工大模型的AI技术，提供智能、高效、快速的搜索体验。天工AI搜索不仅能够找资料、查信息、搜答案、搜文件，还会对海量搜索结果做AI智能聚合，更系统地解答你的问题，提升你的信息理解效率，做你学习、工作、生活的最佳AI搭档。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9zZWFyY2gudGlhbmdvbmcuY24=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">天工AI搜索</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">搭载天工大模型的AI技术，提供智能、高效、快速的搜索体验。天工AI搜索不仅能够找资料、查信息、搜答案、搜文件，还会对海量搜索结果做AI智能聚合，更系统地解答你的问题，提升你的信息理解效率，做你学习、工作、生活的最佳AI搭档。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_5" link-title = "360智脑" link-url = "https://chat.360.com/chat">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chat.360.com/chat" target="_blank" title = "360智脑是由360公司研发的大型语言模型,具有强大的自然语言处理和生成能力">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0LjM2MC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">360智脑</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">360智脑是由360公司研发的大型语言模型,具有强大的自然语言处理和生成能力</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_6" link-title = "文心大模型" link-url = "https://yiyan.baidu.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://yiyan.baidu.com/" target="_blank" title = "基于百度自研PLM ERNIE 3.0 Titan开发的聊天机器人产品。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly95aXlhbi5iYWlkdS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">文心大模型</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">基于百度自研PLM ERNIE 3.0 Titan开发的聊天机器人产品。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_7" link-title = "腾讯混元大模型" link-url = "https://hunyuan.tencent.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://hunyuan.tencent.com/" target="_blank" title = "腾讯混元大模型是由腾讯研发的大语言模型，具备跨领域知识和自然语言理解能力，实现基于人机自然语言对话的方式，理解用户指令并执行任务，帮助用户实现人获取信息，知识和灵感。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9odW55dWFuLnRlbmNlbnQuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">腾讯混元大模型</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">腾讯混元大模型是由腾讯研发的大语言模型，具备跨领域知识和自然语言理解能力，实现基于人机自然语言对话的方式，理解用户指令并执行任务，帮助用户实现人获取信息，知识和灵感。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_8" link-title = "酷表ChatExcel" link-url = "https://chatexcel.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chatexcel.com/" target="_blank" title = "仅通过聊天来操控您的Excel表格">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0ZXhjZWwuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">酷表ChatExcel</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">仅通过聊天来操控您的Excel表格</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_9" link-title = "Bard" link-url = "https://bard.google.com/chat">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://bard.google.com/chat" target="_blank" title = "谷歌的Bard，国内打不开">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9iYXJkLmdvb2dsZS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">Bard</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">谷歌的Bard，国内打不开</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_10" link-title = "ChatGPT" link-url = "https://chat.openai.com">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chat.openai.com" target="_blank" title = "原味ChatGPT，国内打不开">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0Lm9wZW5haS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">ChatGPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">原味ChatGPT，国内打不开</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_11" link-title = "Microsoft Copilot " link-url = "https://copilot.microsoft.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://copilot.microsoft.com/" target="_blank" title = "Microsoft Copilot 利用 AI 的强大功能来提高工作效率、释放创造力，并通过简单的聊天体验帮助你更好地理解信息。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jb3BpbG90Lm1pY3Jvc29mdC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">Microsoft Copilot </span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">Microsoft Copilot 利用 AI 的强大功能来提高工作效率、释放创造力，并通过简单的聊天体验帮助你更好地理解信息。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_12" link-title = "华为盘古" link-url = "https://pangu.huaweicloud.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://pangu.huaweicloud.com/" target="_blank" title = "盘古大模型，仅限华为云企业用户参与体验">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9wYW5ndS5odWF3ZWljbG91ZC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">华为盘古</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">盘古大模型，仅限华为云企业用户参与体验</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_13" link-title = "ChatGPT指令大全" link-url = "https://www.explainthis.io/zh-hant/chatgpt">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.explainthis.io/zh-hant/chatgpt" target="_blank" title = "本站提供數百個精煉過的指令語句 (提示詞)，讓你充分發揮 ChatGPT 的強大功能">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuZXhwbGFpbnRoaXMuaW8=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">ChatGPT指令大全</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">本站提供數百個精煉過的指令語句 (提示詞)，讓你充分發揮 ChatGPT 的強大功能</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_23" link-title = "AIchatOS" link-url = "https://chat18.aichatos.xyz/#/chat/1700053497560">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chat18.aichatos.xyz/#/chat/1700053497560" target="_blank" title = "ChatGPT免费镜像版，且用且珍惜">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0MTguYWljaGF0b3MueHl6" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">AIchatOS</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">ChatGPT免费镜像版，且用且珍惜</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_38" link-title = "智造喵GPT" link-url = "https://chat.aimakex.com/login">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://chat.aimakex.com/login" target="_blank" title = "智造喵, AI中文智能对话, 与AI对话">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jaGF0LmFpbWFrZXguY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">智造喵GPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">智造喵, AI中文智能对话, 与AI对话</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+        <div id = "category-32" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-film"></i>&nbsp;影视频道				<span class = "mdui-typo-caption DFC">免费在线看电视剧、电影</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_73" link-title = "88影视网" link-url = "https://www.88mv.org/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.88mv.org/" target="_blank" title = "88影视网每天搜集互联网最新电影和电视剧，为广大用户免费提供无广告在线观看电影和电视剧服务，及时收录最新、最热、最全的电影大片,高清正版免费看。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuODhtdi5vcmc=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">88影视网</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">88影视网每天搜集互联网最新电影和电视剧，为广大用户免费提供无广告在线观看电影和电视剧服务，及时收录最新、最热、最全的电影大片,高清正版免费看。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_14" link-title = "影搜" link-url = "https://xn--p3tv7h.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://xn--p3tv7h.com/" target="_blank" title = "影视搜索，全网海量影片数据">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly94bi0tcDN0djdoLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">影搜</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">影视搜索，全网海量影片数据</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_15" link-title = "茶杯狐" link-url = "https://cupfox.love/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://cupfox.love/" target="_blank" title = "片荒剧荒就来茶杯狐，最新片单请微信搜索关注“茶杯狐”公众号！">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9jdXBmb3gubG92ZQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">茶杯狐</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">片荒剧荒就来茶杯狐，最新片单请微信搜索关注“茶杯狐”公众号！</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_16" link-title = "追影猫" link-url = "https://zhuiyingmao2.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://zhuiyingmao2.com/" target="_blank" title = "影视聚合搜索，在线随心看！追影猫最新地址发布页（zhuiyingmao.vip），汇集全球最全电影、电视剧、综艺、动漫、纪录片等影视资源站点！">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly96aHVpeWluZ21hbzIuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">追影猫</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">影视聚合搜索，在线随心看！追影猫最新地址发布页（zhuiyingmao.vip），汇集全球最全电影、电视剧、综艺、动漫、纪录片等影视资源站点！</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_17" link-title = "搜片" link-url = "https://soupian.pro/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://soupian.pro/" target="_blank" title = "搜片.com 聚合全网影片，你想看的全都找得到！每天搜集最新电影、电视剧、在线观看网址、蓝光高清正版免费看！">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9zb3VwaWFuLnBybw==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">搜片</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">搜片.com 聚合全网影片，你想看的全都找得到！每天搜集最新电影、电视剧、在线观看网址、蓝光高清正版免费看！</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_18" link-title = "xmxone" link-url = "https://www.xmxone.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.xmxone.cn/" target="_blank" title = "xmxone聚合全网高清影视在线观看、下载，实时聚合全网优质影视资源，同时支持在线、下载和字幕。电影、电视剧、动漫、综艺、记录片应有尽有。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cueG14b25lLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">xmxone</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">xmxone聚合全网高清影视在线观看、下载，实时聚合全网优质影视资源，同时支持在线、下载和字幕。电影、电视剧、动漫、综艺、记录片应有尽有。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_19" link-title = "7080影视搜" link-url = "https://7080.wang/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://7080.wang/" target="_blank" title = "7080影视搜，一个简单的影视搜索">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly83MDgwLndhbmc=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">7080影视搜</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">7080影视搜，一个简单的影视搜索</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_20" link-title = "影视大全" link-url = "https://www.xindiguofs.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.xindiguofs.com/" target="_blank" title = "好看的电视频道">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cueGluZGlndW9mcy5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">影视大全</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">好看的电视频道</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_21" link-title = "天堂影视" link-url = "https://www.hmweipeng.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.hmweipeng.com/" target="_blank" title = "全网好看的高清电影VIP电视剧全集免费在线观看 ">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuaG13ZWlwZW5nLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">天堂影视</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">全网好看的高清电影VIP电视剧全集免费在线观看 </span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_22" link-title = "影视大全" link-url = "http://www.cnuhnd.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://www.cnuhnd.com/" target="_blank" title = "影视大全为您提供2022年好看的电影、全新电视剧、全新动漫、全新综艺节目排行榜，免费在线观看韩国伦理电影、动作片、 喜剧片、爱情片、搞笑片等全新电影、全集电视剧，更多电影高清在线观看尽在影视大全。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cDovL3d3dy5jbnVobmQuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">影视大全</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">影视大全为您提供2022年好看的电影、全新电视剧、全新动漫、全新综艺节目排行榜，免费在线观看韩国伦理电影、动作片、 喜剧片、爱情片、搞笑片等全新电影、全集电视剧，更多电影高清在线观看尽在影视大全。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_70" link-title = "小小影视" link-url = "https://www.xiaoxiaoquan.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.xiaoxiaoquan.com/" target="_blank" title = "小小影视提供高清电影在线秒播,全网热播电视剧、综艺、动漫在线观看,实时更新影视大全,最新抢先电影、热门日本韩剧电视剧、综艺、动漫尽在小小影院。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cueGlhb3hpYW9xdWFuLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">小小影视</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">小小影视提供高清电影在线秒播,全网热播电视剧、综艺、动漫在线观看,实时更新影视大全,最新抢先电影、热门日本韩剧电视剧、综艺、动漫尽在小小影院。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_71" link-title = "影视工厂" link-url = "https://yeyajiba.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://yeyajiba.com/" target="_blank" title = "【影视工厂】实时聚合全网优质影视资源,同时支持蓝光高清免费在线播放。为您提供手机版高清无删减电影免费在线观看,在线追超前点播热门电视剧，电影排行榜尽在影视工厂。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly95ZXlhamliYS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">影视工厂</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">【影视工厂】实时聚合全网优质影视资源,同时支持蓝光高清免费在线播放。为您提供手机版高清无删减电影免费在线观看,在线追超前点播热门电视剧，电影排行榜尽在影视工厂。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_72" link-title = "快看影视" link-url = "https://www.kuaikanys.net/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.kuaikanys.net/" target="_blank" title = "快看影院是一个免费在线电影网，免费提供全网最新电影、最新电视剧在线观看及迅雷电影下载，快看影视专为影迷推荐好看的电影、好看的电视剧以及热门电影排行榜、热门电视剧排行榜，是您免费观影的最佳选择。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cua3VhaWthbnlzLm5ldA==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">快看影视</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">快看影院是一个免费在线电影网，免费提供全网最新电影、最新电视剧在线观看及迅雷电影下载，快看影视专为影迷推荐好看的电影、好看的电视剧以及热门电影排行榜、热门电视剧排行榜，是您免费观影的最佳选择。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_74" link-title = "KK影视" link-url = "https://www.kplay.top/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.kplay.top/" target="_blank" title = "提供全网免费影视-全网最新最快电影电视剧">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cua3BsYXkudG9w" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">KK影视</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">提供全网免费影视-全网最新最快电影电视剧</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+        <div id = "category-34" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-toggle-right"></i>&nbsp;音乐下载				<span class = "mdui-typo-caption DFC">无损音乐下载网站，建议收藏</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_47" link-title = "ZZ123" link-url = "https://zz123.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://zz123.com/" target="_blank" title = "免费听歌，免费下载！">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly96ejEyMy5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">ZZ123</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">免费听歌，免费下载！</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_46" link-title = "myfreemp3" link-url = "https://www.myfreemp3.com.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.myfreemp3.com.cn/" target="_blank" title = "myfreemp3是一个可以让我们大家免费在线听想听的音乐网站，支持手机端电脑端直接在线搜索歌曲进行播放，并且支持音乐下载到本地播放。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cubXlmcmVlbXAzLmNvbS5jbg==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">myfreemp3</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">myfreemp3是一个可以让我们大家免费在线听想听的音乐网站，支持手机端电脑端直接在线搜索歌曲进行播放，并且支持音乐下载到本地播放。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_42" link-title = "MyFreeMP3" link-url = "https://tools.liumingye.cn/music/#/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://tools.liumingye.cn/music/#/" target="_blank" title = "一个页面超干净的免费音乐网站，提供的音乐资源不仅丰富，而且还支持免费下载MP3格式的歌曲">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly90b29scy5saXVtaW5neWUuY24=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">MyFreeMP3</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">一个页面超干净的免费音乐网站，提供的音乐资源不仅丰富，而且还支持免费下载MP3格式的歌曲</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_43" link-title = "爱听音乐" link-url = "https://www.yinyue.love/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.yinyue.love/" target="_blank" title = "爱听音乐YINYUE.LOVE 具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cueWlueXVlLmxvdmU=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">爱听音乐</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">爱听音乐YINYUE.LOVE 具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_44" link-title = "多站合一音乐搜索" link-url = "http://music.wandhi.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://music.wandhi.com/" target="_blank" title = "玩的嗨多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cDovL211c2ljLndhbmRoaS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">多站合一音乐搜索</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">玩的嗨多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_45" link-title = "铜钟" link-url = "https://tonzhon.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://tonzhon.com/" target="_blank" title = "铜钟是一个主打 [听歌] 功能的 web app, 致力于为人们带来卓越的听歌体验。铜钟有着丰富的音乐资源，简洁清爽的 UI 和方便的交互。在铜钟上，你不仅可以方便地找到并聆听你喜欢的歌曲，还可以将它们保存下来...">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly90b256aG9uLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">铜钟</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">铜钟是一个主打 [听歌] 功能的 web app, 致力于为人们带来卓越的听歌体验。铜钟有着丰富的音乐资源，简洁清爽的 UI 和方便的交互。在铜钟上，你不仅可以方便地找到并聆听你喜欢的歌曲，还可以将它们保存下来...</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_48" link-title = "歌曲宝" link-url = "https://www.gequbao.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.gequbao.com/" target="_blank" title = "歌曲宝在线音乐搜索，可以在线免费下载全网MP3付费歌曲、流行音乐、经典老歌等。曲库完整，更新迅速，试听流畅，支持高品质|无损音质~">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuZ2VxdWJhby5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">歌曲宝</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">歌曲宝在线音乐搜索，可以在线免费下载全网MP3付费歌曲、流行音乐、经典老歌等。曲库完整，更新迅速，试听流畅，支持高品质|无损音质~</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_64" link-title = "音乐解析神器" link-url = "https://tools.jixiaob.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://tools.jixiaob.cn/" target="_blank" title = "多站合一音乐搜索解决方案，可解析网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly90b29scy5qaXhpYW9iLmNu" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">音乐解析神器</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">多站合一音乐搜索解决方案，可解析网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_65" link-title = "网易云VIP解析" link-url = "https://tools.qzxdp.cn/wyy_vip">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://tools.qzxdp.cn/wyy_vip" target="_blank" title = "网易云音乐下载,网易云VIP下载,网易云SVIP下载,音乐下载,SVIP音乐下载,VIP音乐下载,VIP下载,网易云VIP音乐解析,网易云SVIP音乐解析,网易云VIP音乐怎么下载,VIP解析,网易云音乐在线下载,网易云VIP在线下载,网易云SVIP音乐,VIP音乐在线下载,SVIP音乐在线下载">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly90b29scy5xenhkcC5jbg==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">网易云VIP解析</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">网易云音乐下载,网易云VIP下载,网易云SVIP下载,音乐下载,SVIP音乐下载,VIP音乐下载,VIP下载,网易云VIP音乐解析,网易云SVIP音乐解析,网易云VIP音乐怎么下载,VIP解析,网易云音乐在线下载,网易云VIP在线下载,网易云SVIP音乐,VIP音乐在线下载,SVIP音乐在线下载</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_66" link-title = "网易云音乐下载" link-url = "https://zhouql.vip/wyy/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://zhouql.vip/wyy/" target="_blank" title = "这是一个免费的网易云音乐下载工具">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly96aG91cWwudmlw" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">网易云音乐下载</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">这是一个免费的网易云音乐下载工具</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_68" link-title = "拾音人" link-url = "https://www.shiyinren.com/tool/music/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.shiyinren.com/tool/music/" target="_blank" title = "拾音人全网音乐搜索下载器，懒人福利多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuc2hpeWlucmVuLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">拾音人</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">拾音人全网音乐搜索下载器，懒人福利多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_69" link-title = "拾音人音乐网" link-url = "https://www.shiyinren.com/song">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.shiyinren.com/song" target="_blank" title = "最新音乐流行歌曲在线试听下载，手机下载歌曲、手机在线听歌、免费QQ空间音乐外链、酷我音乐下载用拾音人音乐网。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="99" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">拾音人音乐网</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">最新音乐流行歌曲在线试听下载，手机下载歌曲、手机在线听歌、免费QQ空间音乐外链、酷我音乐下载用拾音人音乐网。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+        <div id = "category-35" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-sticky-note-o"></i>&nbsp;PPT模板				<span class = "mdui-typo-caption DFC">免费的PPT模板下载</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_50" link-title = "第1PPT" link-url = "https://www.1ppt.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.1ppt.com/" target="_blank" title = "第一PPT模板网提供各类PPT模板免费下载，PPT背景图，PPT素材，PPT背景，免费PPT模板下载，PPT图表，精美PPT下载，PPT课件下载，PPT背景图片免费下载；">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuMXBwdC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">第1PPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">第一PPT模板网提供各类PPT模板免费下载，PPT背景图，PPT素材，PPT背景，免费PPT模板下载，PPT图表，精美PPT下载，PPT课件下载，PPT背景图片免费下载；</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_52" link-title = "逼格PPT" link-url = "http://www.tretars.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://www.tretars.com/" target="_blank" title = "逼格PPT模板网，是一个提供免费ppt模板下载的个人博客网站。除了PPT模板以外，博主李益达还会分享一些免费ppt模板制作教程和素材下载。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cDovL3d3dy50cmV0YXJzLmNvbQ==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">逼格PPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">逼格PPT模板网，是一个提供免费ppt模板下载的个人博客网站。除了PPT模板以外，博主李益达还会分享一些免费ppt模板制作教程和素材下载。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_53" link-title = "优品PPT" link-url = "https://www.ypppt.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.ypppt.com/" target="_blank" title = "PPT模板免费下载_精美免费PPT模板下载">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cueXBwcHQuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">优品PPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">PPT模板免费下载_精美免费PPT模板下载</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_49" link-title = "PPT世界" link-url = "https://www.pptx.cn/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.pptx.cn/" target="_blank" title = "PPT世界【pptx.cn】是演示引擎旗下品牌，汇集全球优秀PPTer，致力于发现幻灯的力量！为Z世代职场人提供“智慧办公”解决方案，拥有海量优秀PPT设计资源，包含PPT设计教程、PPT动画教程、PPT模板素材下载等。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cucHB0eC5jbg==" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">PPT世界</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">PPT世界【pptx.cn】是演示引擎旗下品牌，汇集全球优秀PPTer，致力于发现幻灯的力量！为Z世代职场人提供“智慧办公”解决方案，拥有海量优秀PPT设计资源，包含PPT设计教程、PPT动画教程、PPT模板素材下载等。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_51" link-title = "51PPT模板网" link-url = "https://www.51pptmoban.com">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.51pptmoban.com" target="_blank" title = "51ppt模板网提供部分原创ppt模板及PPTer分享的优质ppt模板下载，动态ppt模板，宽屏ppt模板，PowerPoint模版背景，ppt模板素材、图表、特效等幻灯片模板设计教程下载。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuNTFwcHRtb2Jhbi5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">51PPT模板网</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">51ppt模板网提供部分原创ppt模板及PPTer分享的优质ppt模板下载，动态ppt模板，宽屏ppt模板，PowerPoint模版背景，ppt模板素材、图表、特效等幻灯片模板设计教程下载。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_54" link-title = "PPT宝藏" link-url = "http://www.pptbz.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://www.pptbz.com/" target="_blank" title = "PPT宝藏提供大量好看漂亮的PPT模板、PPT教程、Powerpoint模板、幻灯片模板、PPT图标、PPT素材、PPT学校教学课件下载。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="5" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">PPT宝藏</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">PPT宝藏提供大量好看漂亮的PPT模板、PPT教程、Powerpoint模板、幻灯片模板、PPT图标、PPT素材、PPT学校教学课件下载。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_55" link-title = "爱PPT" link-url = "https://www.2ppt.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.2ppt.com/" target="_blank" title = "爱PPT模板网提供各类PPT模板免费下载，PPT背景图，PPT素材，PPT背景，免费PPT模板下载，PPT图表，精美PPT下载，PPT课件下载，PPT背景图片免费下载">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuMnBwdC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">爱PPT</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">爱PPT模板网提供各类PPT模板免费下载，PPT背景图，PPT素材，PPT背景，免费PPT模板下载，PPT图表，精美PPT下载，PPT课件下载，PPT背景图片免费下载</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_56" link-title = "雷锋PPT网" link-url = "https://www.lfppt.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.lfppt.com/" target="_blank" title = "雷锋PPT网WWW.LFPPT.COM简称LFPPT网,专注于精美ppt模板免费下载,海量免费PPT模板下载，是PPT模板下载一站式服务平台，提供动态模板、图表、背景图片、素材、教程、幻灯片模板等各类PPT资源大全下载。">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cubGZwcHQuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">雷锋PPT网</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">雷锋PPT网WWW.LFPPT.COM简称LFPPT网,专注于精美ppt模板免费下载,海量免费PPT模板下载，是PPT模板下载一站式服务平台，提供动态模板、图表、背景图片、素材、教程、幻灯片模板等各类PPT资源大全下载。</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+        <div id = "category-36" class = "mdui-col-xs-12 mdui-typo-title cat-title CFC">
+            <i class="fa fa-arrow-circle-down"></i>&nbsp;B站视频下载				<span class = "mdui-typo-caption DFC">下载B站里的视频</span>
+        </div>
+        <!-- 遍历链接 -->
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_59" link-title = "贝贝BiliBili" link-url = "https://xbeibeix.com/api/bilibili/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://xbeibeix.com/api/bilibili/" target="_blank" title = "免费在线B站视频下载">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly94YmVpYmVpeC5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">贝贝BiliBili</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">免费在线B站视频下载</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_57" link-title = "唧唧Down" link-url = "http://client.jijidown.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="http://client.jijidown.com/" target="_blank" title = "这是一个用于下载 bilibili 视频的PC应用程序, 它能够下载 99% bilibili 视频(不支持番剧类型), 并且它将会终身免费提供使用.">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cDovL2NsaWVudC5qaWppZG93bi5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">唧唧Down</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">这是一个用于下载 bilibili 视频的PC应用程序, 它能够下载 99% bilibili 视频(不支持番剧类型), 并且它将会终身免费提供使用.</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_58" link-title = "BilibiliVideoDownload" link-url = "https://github.com/BilibiliVideoDownload/BilibiliVideoDownload">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://github.com/BilibiliVideoDownload/BilibiliVideoDownload" target="_blank" title = "跨平台下载bilibili视频桌面端软件，支持windows、macOS、Linux">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9naXRodWIuY29t" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">BilibiliVideoDownload</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">跨平台下载bilibili视频桌面端软件，支持windows、macOS、Linux</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_60" link-title = "bilibilivideodownload" link-url = "https://www.ghxi.com/bilibilivideodownload.html">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://www.ghxi.com/bilibilivideodownload.html" target="_blank" title = "跨平台下载bilibili视频桌面端软件，支持windows、macOS、Linux 软件使用 软件不支持付费视频和地区限制视频，可能会报错 登录信息有过期时间，好像是半年 由于下载的音视频是分离的，项目使用ffmpeg合成导致安装包有点大(ffmpeg大约70+MB) 下载视频时候会提示登录，登录后只会获取你的SES...">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly93d3cuZ2h4aS5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">bilibilivideodownload</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">跨平台下载bilibili视频桌面端软件，支持windows、macOS、Linux 软件使用 软件不支持付费视频和地区限制视频，可能会报错 登录信息有过期时间，好像是半年 由于下载的音视频是分离的，项目使用ffmpeg合成导致安装包有点大(ffmpeg大约70+MB) 下载视频时候会提示登录，登录后只会获取你的SES...</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_61" link-title = "哔哩哔哩(bilibili)视频解析下载" link-url = "https://bili.iiilab.com/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://bili.iiilab.com/" target="_blank" title = "哔哩哔哩高清视频解析下载工具是一个免费的B站视频在线解析提取工具,支持提取B站APP和bilibili网站上的任何视频,提取出来的视频无水印.我们可以借助此下载器方便地将视频保存到手机相册或者电脑硬盘.">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly9iaWxpLmlpaWxhYi5jb20=" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">哔哩哔哩(bilibili)视频解析下载</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">哔哩哔哩高清视频解析下载工具是一个免费的B站视频在线解析提取工具,支持提取B站APP和bilibili网站上的任何视频,提取出来的视频无水印.我们可以借助此下载器方便地将视频保存到手机相册或者电脑硬盘.</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <div class="mdui-col-lg-3 mdui-col-md-4 mdui-col-xs-12 link-space"  id = "id_67" link-title = "B站视频下载工具 | 极简纯净" link-url = "https://zhouql.vip/bilibili/">
+            <!--定义一个卡片-->
+            <div class="mdui-card link-line mdui-hoverable CBC">
+                <!-- 如果是私有链接，则显示角标 -->
+                <!-- 角标END -->
+                <a class="TFC" href="https://zhouql.vip/bilibili/" target="_blank" title = "b站视频下载工具，免费极简方便">							<div class="mdui-card-primary" >
+                    <div class="mdui-card-primary-title link-title">
+                        <img src="//favicon.rss.ink/v1/aHR0cHM6Ly96aG91cWwudmlw" alt="HUAN" width="16px" height="16px">
+                        <span class="link_title">B站视频下载工具 | 极简纯净</span>
+                    </div>
+                </div>
+                    <!-- 卡片的内容end -->
+                    <div class="mdui-card-content mdui-text-color-black-disabled DFC" style="padding-top:0px;"><span class="link-content">b站视频下载工具，免费极简方便</span></div></a>				</div>
+            <!--卡片END-->
+        </div>
+        <!-- 遍历链接END -->
+    </div>
+
+    <!-- row end -->
+</div>
+<div class="mdui-divider" style = "margin-top:2em;"></div>
+<!--正文内容部分END-->
+
+<div>
+    <div align="center" >
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:90%;height:230px"
+             data-ad-client="ca-pub-6605580376880594"
+             data-ad-slot="9472713450"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;height:250px"
+         data-ad-client="ca-pub-6605580376880594"
+         data-full-width-responsive="false"
+         data-ad-slot="4151821202"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<!-- footer部分 -->
+<footer >
+</footer>
+
+<!-- footerend -->
+<script src = "static/jquery/jquery-3.6.0.min.js"></script>
+<script src = "static/Layer/v3.3.0/layer.js"></script>
+<script src = "static/ContextMenu/2.9.2/jquery.contextMenu.min.js"></script>
+<script src = "static/Other/ClipBoard.min.js"></script>
+<script src = "static/MDUI/v1.0.1/js/mdui.min.js"></script>
+<script src = "static/Other/holmes.js"></script>
+<script src = "templates/default/embed.js?v=v0.9.19-20220429"></script>
+<!--天气插件-->
+<script>
+    WIDGET = {
+        "CONFIG": {
+            "modules": "01234", //实况温度、城市、天气状况、预警
+            "background": "1", //背景颜色
+            "tmpColor": "#ffffff", //温度文字颜色
+            "tmpSize": "16",
+            "cityColor": "#ffffff", //城市名文字颜色
+            "citySize": "16",
+            "aqiColor": "#ffffff", //空气质量文字颜色
+            "aqiSize": "16",
+            "weatherIconSize": "24", //天气图标尺寸
+            "alertIconSize": "18", //预警图标尺寸
+            "padding": "5px 1px 5px 1px", //边距
+            "borderRadius": "5", //圆角
+            "key": "dd2e9ab2728d4b3c91245fe4057cb9ce"
+        }
+    }
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+<!--天气插件End-->
+<script>
+    var u = 'admin';
+    var t = 'default';
+    user_menu();
+</script>
+</body>
+
+</html>
